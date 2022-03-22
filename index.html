@@ -11,6 +11,13 @@
             <div id="BI" class="trip">
                 <iframe id="ff23" src="https://t.sidekickopen77.com/s1t/c/5/f18dQhb0S7lM8dDMPbW2n0x6l2B9nMJN7t5XWPfhMynW2z96k08qCh8YW56dDSr96X49Y102?te=W3R5hFj4cm2zwW3zfPSj45SByGW49Jf7s3Fbt5SW4kFl7_2k9-cwW4rk53Q3W0hhZW34mJ822CP1FvW3bbrMX2CF5crW2szGMF1SbDyPW34zDK_3VG8qXW2vHhNd34jTGBW34whMt34xZFXW3T53C02sN47LW3V-xpc4tndksW4twCyq34B0K2W3VY-sT2w0gRzW3SyrdT2vQsGFW3bhSk73_Nb0yW34mJkw2CGNsY4rSBG1&si=8000000002076766&pi=0730b270-34aa-4d8d-a83d-90b3731c6bf4" width="100%" height="100%" title="W3Schools Free Online Web Tutorials"></iframe>
             </div>
+
+            <div id="BI2" class="trip">
+                <iframe id="ff565" src="https://app.powerbi.com/view?r=eyJrIjoiZDI0ZjY4NTAtZmViMC00ZDVmLWJkYzMtYmRkNTg1NWVlMWYyIiwidCI6Ijk0YzUxNzg0LTlhNjgtNDljNi04ZDRlLWRmYmZkMTQ4MGJmNiJ9" width="100%" height="100%" title="W3Schools Free Online Web Tutorials"></iframe>
+            </div>
+            <div id="BI3" class="trip">
+                <iframe id="ff56534" src="https://app.powerbi.com/view?r=eyJrIjoiZThmNzU2MzEtOGM2YS00NGU4LThjOTEtNGI4ODg1YWY3YmU3IiwidCI6Ijk0YzUxNzg0LTlhNjgtNDljNi04ZDRlLWRmYmZkMTQ4MGJmNiJ9" width="100%" height="100%" title="W3Schools Free Online Web Tutorials"></iframe>
+            </div>
             <div id="MT" class="trip">
                 <script type="text/javascript">
                     width='100%';		// the width of the embedded map in pixels or percentage
@@ -34,11 +41,17 @@
 <script>
     $(document).ready(function(){
         $('#main #BI').hide();
+        $('#main #BI2').hide();
+        $('#main #BI3').hide();
         $('#main #MT').show();
-        function vv(){
-            $('#main #BI').toggle();
-            $('#main #MT').toggle();
-        }
-        setInterval(function () {vv() }, 10000);
+
+        main_time = 20000
+        setInterval(function () {$('#main #BI').toggle(); }, main_time+1000);
+
+        setInterval(function () {$('#main #BI2').toggle(); }, main_time+2000);
+
+        setInterval(function () {$('#main #BI3').toggle(); }, main_time+3000);
+
+        setInterval(function () {$('#main #MT').toggle(); }, main_time+1000);
     });
 </script>
