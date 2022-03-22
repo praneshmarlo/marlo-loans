@@ -45,13 +45,13 @@
         $('#main #BI3').hide();
         $('#main #MT').show();
 
-        main_time = 20000
-        setInterval(function () {$('#main #BI').toggle(); }, main_time+1000);
+        main_time = 15000
+        setInterval(function () {$('#main #BI').toggle(); }, main_time);
 
-        setInterval(function () {$('#main #BI2').toggle(); }, main_time+2000);
+        setInterval(function () {$('#main #BI2').toggle(); }, main_time*2);
 
-        setInterval(function () {$('#main #BI3').toggle(); }, main_time+3000);
+        setInterval(function () {$('#main #BI3').toggle(); }, main_time*3);
 
-        setInterval(function () {$('#main #MT').toggle(); }, main_time+1000);
+        setInterval(function () {$('#main #MT').toggle(); }, main_time*4);
     });
 </script>
